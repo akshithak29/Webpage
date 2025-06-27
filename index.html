@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFast - Download Your Free eBook!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        .header-bg {
+            background-color: #312e81; /* Darker blue, similar to reference */
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, #4c51bf, #6b46c1); /* Purple-blue gradient */
+        }
+        .cta-button {
+            background-color: #f59e0b; /* Amber/Orange, prominent */
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #d97706; /* Darker amber */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="header-bg text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold">LearnFast</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="courses-list-page.html" class="hover:text-amber-300 text-lg font-medium">Courses</a></li>
+                    <li><a href="learnfast-about-contact-page.html" class="hover:text-amber-300 text-lg font-medium">About Us</a></li>
+                    <li><a href="learnfast-about-contact-page.html#contact" class="hover:text-amber-300 text-lg font-medium">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-white text-2xl">&#9776;</button> <!-- Hamburger menu -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-pulse-slight rounded-lg">
+                Master Web Development: The Ultimate Guide
+            </h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-90 rounded-lg max-w-3xl mx-auto">
+                Unlock the secrets of modern web development with our comprehensive free eBook. Learn essential skills in HTML, CSS, and JavaScript to build amazing websites from scratch.
+            </p>
+            <!-- Call to action for registration -->
+            <a href="registration.html" class="cta-button text-white px-10 py-5 rounded-full text-2xl font-bold hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-400 focus:ring-opacity-75 transition duration-300">
+                Register & Download Free eBook
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section (re-purposed or just general info) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold text-gray-900 mb-12 rounded-lg">What You'll Learn from this eBook:</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transition duration-300 hover:shadow-xl transform hover:scale-105">
+                    <div class="text-6xl text-indigo-600 mb-4">&#128187;</div> <!-- Laptop emoji -->
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">HTML Foundations</h4>
+                    <p class="text-gray-600">Build robust and semantic structures for your web pages.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transition duration-300 hover:shadow-xl transform hover:scale-105">
+                    <div class="text-6xl text-indigo-600 mb-4">&#128073;&#127995;</div> <!-- Paint palette emoji -->
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">CSS Styling Mastery</h4>
+                    <p class="text-gray-600">Transform plain HTML into visually stunning, responsive designs.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl card-shadow transition duration-300 hover:shadow-xl transform hover:scale-105">
+                    <div class="text-6xl text-indigo-600 mb-4">&#128640;</div> <!-- Rocket emoji -->
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3">JavaScript Interactivity</h4>
+                    <p class="text-gray-600">Add dynamic features and create engaging user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (bottom) -->
+    <section class="py-16 bg-indigo-700 text-white text-center">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h3 class="text-4xl font-bold mb-6 rounded-lg">Ready to Launch Your Web Dev Career?</h3>
+            <p class="text-xl opacity-90 mb-8">
+                This free eBook is your first step. Register now to gain access!
+            </p>
+            <a href="registration.html" class="cta-button text-white px-10 py-5 rounded-full text-2xl font-bold hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-400 focus:ring-opacity-75 transition duration-300">
+                Get Your Free eBook Now!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 LearnFast. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
